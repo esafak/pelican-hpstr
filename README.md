@@ -7,17 +7,18 @@ All credits for that beautiful theme go to [Michael Rose](https://github.com/mmi
 ## What HPSTR brings to the table:
 
 * Responsive templates for post, page, and post index. Looks great on mobile, tablet, and desktop devices.
-* Gracefully degrades in older browsers. Compatible with Internet Explorer 8+ and all modern browsers.
+* Graceful degradation in older browsers. Compatible with Internet Explorer 8+ and all modern browsers.
 * Modern and minimal design.
 * Sweet animated menu.
 * Readable typography to make your words shine.
 * Support for large images to call out your favorite posts.
-* Social Sharing links for Facebook, Twitter, and Google+ if you choose to enable.
-
+* Social Sharing links for Facebook, Twitter, and Google+, if you choose.
+* Open Graph metadata for SEO and better embeds in social networks.
+* Google Web fonts.
 
 ## Supported plugins
 
-Pelican blogging system comes with additional plugins that you can install and activate for your website. For more information see the [pelican-plugins](https://github.com/getpelican/pelican-plugins) repository.
+Pelican comes with additional plugins that you can install and activate for your website. For more information see the [pelican-plugins](https://github.com/getpelican/pelican-plugins) repository.
 
 Here are the plugins that should work out of the box with that theme if enabled:
 
@@ -50,7 +51,7 @@ SITEURL = ''
 
 # Directories configuration
 PATH = 'content'
-ARTICLE_DIR = 'posts'
+ARTICLE_PATHS = ['posts']
 
 # Any extra files should be added here
 STATIC_PATHS = [
@@ -73,17 +74,27 @@ USE_FOLDER_AS_CATEGORY = False
 DEFAULT_CATEGORY = 'Misc'
 
 # Plugin path
-PLUGIN_PATH = '../pelican-plugins'
+PLUGIN_PATHS = ['../pelican-plugins']
 PLUGINS = ['related_posts', 'sitemap', 'i18n_subsites']
+
+JINJA_EXTENSIONS = ['jinja2.ext.i18n']
 
 # Theme
 THEME = "theme/pelican-hpstr"
 
+# Social account names/numbers
+GITHUB = ''
+GOOGLE = ''
+STACKX = ''
+TWITTER = ''
+LINKEDIN = ''
 
 # Social widgets
-SOCIAL = (('github', 'https://github.com/yourname', 'GitHub'),
-          ('twitter', 'http://twitter.com/yourname'),
-          ('linkedin', 'http://fr.linkedin.com/in/yourname', 'LinkedIn'),)
+SOCIAL = (('github', 'https://github.com/'+GITHUB, 'GitHub'),
+          ('twitter', 'http://twitter.com/'+TWITTER, 'Twitter'},
+          ('google', 'https://plus.google.com/+' + GOOGLE, 'Google+')
+          ('linkedin', 'http://linkedin.com/in/'+LINKEDIN, 'LinkedIn'),
+          ('stack-exchange', 'https://stackexchange.com/users/' + STACKX, 'Stack Exchange'),)
           
 # Sitemap configuration
 SITEMAP = {
@@ -114,6 +125,6 @@ Ping me on Twitter [@jonathan_dray](http://twitter.com/jonathan_dray) or [file a
 
 ## License
 
-As the original theme is licensed under the [GNU General Public License](https://github.com/mmistakes/hpstr-jekyll-theme/blob/master/LICENSE), i choose to distribute the Pelican version
-under the same conditions.
+As the original theme is licensed under the [GNU General Public License](https://github.com/mmistakes/hpstr-jekyll-theme/blob/master/LICENSE), I choose to distribute the Pelican version under the same conditions.
+
 This theme is free and open source software, distributed under the [GNU General Public License](https://github.com/spiroid/pelican-hpstr/blob/master/LICENSE) version 2 or later. So feel free to to modify this theme to suit your needs.
