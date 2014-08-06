@@ -18,13 +18,18 @@ $info         : #308cbc;
 
 // Typography
 // --------------------------------------------------
-$base-font: 'Lato', Calibri, Arial, sans-serif;
-$heading-font: $base-font;
+
+$google-fonts: Lato, Bitter, "Nova Flat", "PT Serif";
+$local-fonts: "Rothenburg Decorative";
+$local-font-files: '/theme/fonts/rothenbg.woff';
+$splash-font: "Rothenburg Decorative";
+$base-font: 'PT Serif', 'Bitter', 'Hoefler Text', serif;
+$heading-font: 'Lato', 'Futura', 'Nova Flat', 'Helvetica', sans-serif;
 $caption-font: $base-font;
 $code-font: monospace;
 $alt-font: serif;
 
-$doc-font-size: 16;
+$doc-font-size: 15;
 $doc-line-height: 26;
 
 

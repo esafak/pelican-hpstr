@@ -3,13 +3,16 @@
 <!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="{{ DEFAULT_LANG }}"> <![endif]-->
 <!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="{{ DEFAULT_LANG }}"><![endif]-->
 <!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="{{ DEFAULT_LANG }}"><![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="{{ DEFAULT_LANG }}"><!--<![endif]-->
+<!--[if gt IE 8]><!--> 
+<html class="no-js" lang="{{ DEFAULT_LANG }}" itemscope itemtype="http://schema.org/Blog"><!--<![endif]-->
 <head>
     <meta name="robots" content="{% block meta_robots %}index,follow{% endblock %}">
     {% include "includes/head.html" %}
 
     <title>{% block head_title %}{{ SITENAME }}{% endblock %}</title>
-    {% block head_extra %}{% endblock %}
+    {% block head_extra %}
+    <!-- Insert your metadata here -->
+    {% endblock %}
 
     <!-- Background image -->
     {% block background %}{{ background_image()}}{% endblock %}
@@ -23,13 +26,14 @@
 {% block header %}
 <div class="entry-header">
     <div class="entry-image">
-      <img src="{{ SITEURL }}/images/header.jpg" alt="{{ SITENAME }}">
+      <img src="{{ SITEURL }}/images/{% if BANNER %}{{BANNER}}{%else%}header.jpg{%endif%}" alt="{{ SITENAME }}">
     </div><!-- /.entry-image -->
 
     <div class="header-title">
       <div class="header-title-wrap">
-        <h1>{{ SITENAME }}</h1>
-        <h2>{% block title %}{% endblock %}</h2>
+        <h1>{{ SITENAME }} </h1>
+        <h3>{{ SITESUBTITLE }}</h3>
+        <h3>{% block title %}{% endblock %}</h3>
       </div><!-- /.header-title-wrap -->
     </div><!-- /.header-title -->
 </div><!-- /.entry-header -->

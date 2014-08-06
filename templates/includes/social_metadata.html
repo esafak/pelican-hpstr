@@ -1,0 +1,44 @@
+<!-- Google Authorship and Publisher Markup -->
+{% if GOOGLE %}
+<link rel="author" href={{"https://plus.google.com/+" + GOOGLE}} />
+{% endif %}
+
+{# Removed as Open Graph suffices
+<!-- Schema.org markup for Google+. -->
+<meta itemprop="name" content="{{article.summary}}">
+<meta itemprop="description" content="{{article.summary}}">
+<meta itemprop="image" content={{AVATAR}}>
+#}
+
+{% if TWITTER %}
+<!-- Twitter Card data -->
+<meta name="twitter:card" content="summary_large_image">
+<!-- <meta name="twitter:site" content="@publisher_handle"> -->
+<meta name="twitter:title" content={{article.title}} >
+<meta name="twitter:description" content="Page description less than 200 characters">
+<meta name="twitter:creator" content={{"@" + TWITTER}}>
+
+<!-- Twitter summary card with large image must be at least 280x150px -->
+<meta name="twitter:image:src" content={{AVATAR}} >
+{% endif %}
+
+<!-- Open Graph data -->
+<meta property="og:title" content="{{article.title}}" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="{{SITEURL + '/' + article.url}}" />
+<meta property="og:image" content="{{AVATAR}}" />
+{% if article.summary %}
+<meta property="og:description" content="{{article.summary|striptags}}" />
+{% endif %}
+<meta property="og:site_name" content="{{SITENAME}}" />
+<meta property="article:published_time" content="{{article.date}}" />
+{% if article.modified %}
+<meta property="article:modified_time" content="{{article.modified}}" />
+{% endif %}
+{% if article.tags %}
+<meta property="article:tag" content="{{article.tags}}" />
+{% endif %}
+{# Note sure what to do with these so I omitted them
+<meta property="article:section" content="Article Section" /> 
+<meta property="fb:admins" content="Facebook numeric ID" />
+#}

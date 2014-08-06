@@ -10,7 +10,9 @@
 <!-- Allows activation of ClearType in Mobile ie for smoothing font -->
 <meta http-equiv="cleartype" content="on">
 
+{# This assumes the post is a page, but it may be an article, so I'll hide it for now.
 <link rel="canonical" href="{% block canonical_url %}{{ SITEURL }}/{{ page_name }}{% if articles_page and articles_page.number != 1 %}{{ articles_page.number }}{% endif %}.html{% endblock %}">
+#}
 
 <!-- RSS feeds -->
 {{ feed(FEED_ALL_ATOM, 'atom+xml') }}
@@ -21,9 +23,6 @@
 <!-- For all browsers -->
 <link rel="stylesheet" href="{{ SITEURL }}/theme/css/main.css">
 <link rel="stylesheet" href="{{ SITEURL }}/theme/css/font-awesome.min.css">
-
-<!-- Webfonts -->
-<link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic" rel="stylesheet" type="text/css">
 
 <!-- Icons -->
 <!-- 16x16 -->

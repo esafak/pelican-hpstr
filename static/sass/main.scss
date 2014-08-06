@@ -23,6 +23,9 @@
 
 // Fonts size and style
 @import "partials/typography";
+@import "modules/web-fonts";
+@include web-fonts($google-fonts);
+@include font-face($local-fonts, font-files($local-font-files));
 
 // Code syntax highlighting
 @import "partials/pygments";

@@ -6,11 +6,13 @@
             <a href="#">{{ _('About') }}</a>
             <ul class="dl-submenu">
                 <li>
-                    <img src="{{ SITEURL }}/images/{{ AVATAR if AVATAR else 'avatar.jpg'}}" alt="{{ AUTHOR }} photo" class="author-photo">
+                    <img src="{{ AVATAR if AVATAR else 'images/avatar.jpg'}}" alt="{{ AUTHOR }} photo" class="author-photo">
                     <h4>{{ AUTHOR }}</h4>
                     <p>{{ AUTHOR_ABOUT }}</p>
                 </li>
-                <li><a href="{{ SITEURL }}/about.html">{{ _('Learn More') }}</a></li>
+                {% if ABOUT_PAGE %}
+                <li><a href="{{ SITEURL }}/{{ ABOUT_PAGE }}">{{ _('Learn More') }}</a></li>
+                {% endif %}
                 {% if EMAIL %}
                 <li>
                 <a href="mailto:{{ EMAIL }}"><i class="fa fa-envelope"></i> {{ _('Email') }}</a>

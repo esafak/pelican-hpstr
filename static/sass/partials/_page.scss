@@ -76,9 +76,11 @@ body {
     }
     h1 {
         margin: 10px;
-        font-weight: 700;
+        font-family: $splash-font;
+        font-weight: 100;
+        font-size: 5em;
         margin: 10px 60px;
-        color: $white;
+        color: hsl(50,75,75);
         text-shadow: 1px 1px 4px rgba($base-color, 0.6);
         a {
             color: $white;
@@ -88,6 +90,15 @@ body {
         margin: 0;
         color: $white;
         text-transform: uppercase;
+        @media #{$medium} {
+            a {
+                color: $white;
+            }
+        }
+    }
+    h3 {
+        margin: 0;
+        color: $info;        
         @media #{$medium} {
             a {
                 color: $white;
@@ -231,6 +242,11 @@ body {
             padding: 50px 80px;
             margin: 0 auto 30px auto;
         }
+    }
+    #muut_thread {
+        @extend #disqus_thread;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
     }
     .entry-meta {
         margin: 50px 30px 30px;
