@@ -10,8 +10,22 @@
     {% include "includes/head.html" %}
 
     <title>{% block head_title %}{{ SITENAME }}{% endblock %}</title>
+
+    <!-- Google Authorship and Publisher Markup -->
+    {% if GOOGLE %}
+    <link rel="author" href={{"https://plus.google.com/+" + GOOGLE}} />
+    {% endif %}
+    <meta property="og:site_name" content="{{SITENAME}}" />
+
     {% block head_extra %}
     <!-- Insert your metadata here -->
+    <meta property="og:title" content="{{SITENAME}}" />
+    <meta property="og:url" content="{{SITEURL}}" />
+    <meta property="og:image" content="{{AVATAR}}" />    
+    {% if SITESUBTITLE %}
+    <meta property="og:description" content="{{SITESUBTITLE}}">
+    {% endif %}
+
     {% endblock %}
 
     <!-- Background image -->

@@ -1,10 +1,9 @@
 # HPSTR Pelican Theme
 
-This is an copy and port to [Pelican](https://github.com/getpelican/pelican) static site generator of the [HPSTR Theme](https://github.com/mmistakes/hpstr-jekyll-theme)
-All credits for that beautiful theme go to [Michael Rose](https://github.com/mmistakes)
+This is a port of the [HPSTR Jekyll theme](https://github.com/mmistakes/hpstr-jekyll-theme) by [Michael Rose](https://github.com/mmistakes) to the [Pelican](https://github.com/getpelican/pelican) static site generator.
 
 
-## What HPSTR brings to the table:
+## Features:
 
 * Responsive templates for post, page, and post index. Looks great on mobile, tablet, and desktop devices.
 * Graceful degradation in older browsers. Compatible with Internet Explorer 8+ and all modern browsers.
@@ -12,9 +11,10 @@ All credits for that beautiful theme go to [Michael Rose](https://github.com/mmi
 * Sweet animated menu.
 * Readable typography to make your words shine.
 * Support for large images to call out your favorite posts.
-* Social Sharing links for Facebook, Twitter, and Google+, if you choose.
-* Open Graph metadata for SEO and better embeds in social networks.
+* Social sharing links for Facebook, Twitter, and Google+, if you choose.
+* [Open Graph metadata](http://ogp.me/) for SEO and [better embeds in social networks](https://developers.facebook.com/docs/opengraph/howtos/maximizing-distribution-media-content). Open Graph metadata support for images, videos, audio, etc. inside posts is a possible new feature.
 * Google Web fonts.
+* Comments with [Muut](http://muut.com/) or [Disqus](http://disqus.com/).
 
 ## Supported plugins
 
@@ -31,7 +31,7 @@ Here are the plugins that should work out of the box with that theme if enabled:
     Extends the translations functionality by creating internationalized sub-sites for the default site. Also takes care of translating theme items.
 
   
-## Setup for you pelican website
+## Installation
 
 1. Clone this theme into your pelican's site theme directory
 2. Update your site ```pelicanconf.py``` configuration file
@@ -92,7 +92,7 @@ LINKEDIN = ''
 # Social widgets
 SOCIAL = (('github', 'https://github.com/'+GITHUB, 'GitHub'),
           ('twitter', 'http://twitter.com/'+TWITTER, 'Twitter'},
-          ('google', 'https://plus.google.com/+' + GOOGLE, 'Google+')
+          ('google', 'https://plus.google.com/+' + GOOGLE, 'Google+'),
           ('linkedin', 'http://linkedin.com/in/'+LINKEDIN, 'LinkedIn'),
           ('stack-exchange', 'https://stackexchange.com/users/' + STACKX, 'Stack Exchange'),)
           
@@ -114,12 +114,15 @@ SITEMAP = {
 # I18n
 I18N_TEMPLATES_LANG = 'en'
 
+# Comments
+ENABLE_DISQUS = False
+ENABLE_MUUT = True
+
 ```
 
 
-## Questions / Requests ?
+## Contact
 
-Having a problem getting something to work, have some questions or want an addition to this theme ?
 Ping me on Twitter [@jonathan_dray](http://twitter.com/jonathan_dray) or [file a GitHub Issue](https://github.com/spiroid/pelican-hpstr/issues/new).
 
 
