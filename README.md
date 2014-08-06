@@ -2,8 +2,7 @@
 
 This is a port of the [HPSTR Jekyll theme](https://github.com/mmistakes/hpstr-jekyll-theme) by [Michael Rose](https://github.com/mmistakes) to the [Pelican](https://github.com/getpelican/pelican) static site generator.
 
-
-## Features:
+## Features
 
 * Responsive templates for post, page, and post index. Looks great on mobile, tablet, and desktop devices.
 * Graceful degradation in older browsers. Compatible with Internet Explorer 8+ and all modern browsers.

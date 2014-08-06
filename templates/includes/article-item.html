@@ -4,6 +4,7 @@
             <span class="entry-date date published updated">
                 <time datetime="{{ article.date.isoformat() }}"><a href="{{ SITEURL }}/{{ article.url }}">{{ article.locale_date }}</a></time>
             </span>
+            {% if not SINGLE_AUTHOR %}
             <span class="author vcard">
                 {% if article.author %}
                     {% set authorname = article.author %}
@@ -14,6 +15,7 @@
                 {% endif %}
                 <span class="fn"><a href="{{ authorurl }}" title="About {{ authorname }}">{{ authorname }}</a></span>
             </span>
+            {% endif %}
             {#% if site.disqus_shortname and post.comments %}&nbsp; &bull; &nbsp;<span class="entry-comments"><a href="{{ site.url }}{{ post.url }}#disqus_thread">Comment</a></span>{% endif %#}
             <br>
             {% if article.category %}

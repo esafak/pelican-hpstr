@@ -19,12 +19,13 @@ $info         : #308cbc;
 // Typography
 // --------------------------------------------------
 
-$google-fonts: Lato, Bitter, "Nova Flat", "PT Serif";
+$google-fonts: "Titillium Web", "PT Serif";
 $local-fonts: "Rothenburg Decorative";
 $local-font-files: '/theme/fonts/rothenbg.woff';
 $splash-font: "Rothenburg Decorative";
-$base-font: 'PT Serif', 'Bitter', 'Hoefler Text', serif;
-$heading-font: 'Lato', 'Futura', 'Nova Flat', 'Helvetica', sans-serif;
+$base-font: 'PT Serif', 'Hoefler Text', serif;
+$heading-font: 'Futura', "Titillium Web", 'Helvetica', sans-serif;
+// HPSTR's default heading font is 'Lato', from Google
 $caption-font: $base-font;
 $code-font: monospace;
 $alt-font: serif;
