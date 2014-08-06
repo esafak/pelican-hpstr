@@ -51,11 +51,12 @@ body {
     }
     h2 {
         margin: 0;
+        //font-weight: 500;
         @include font-rem(18);
-        text-transform: uppercase;
+        //text-transform: uppercase;
         color: lighten($base-color,40);
         @media #{$medium} {
-            @include font-rem(30);
+            @include font-rem(28);
         }
     }
 }
@@ -78,7 +79,7 @@ body {
         margin: 10px;
         padding-top: 300px;
         font-family: $splash-font;
-        font-weight: 100;
+        font-weight: 400;
         font-size: 5em;
         margin: 10px 60px;
         color: hsl(50,75,75);

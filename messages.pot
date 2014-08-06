@@ -73,8 +73,15 @@ msgid "Powered by"
 msgstr ""
 
 #: templates/includes/footer.html:1
-msgid "using"
+msgid "and styled using"
 msgstr ""
+
+#: templates/includes/footer.html:1
+msgid "a derivative"
+msgstr ""
+
+#: templates/includes/footer.html:1
+msgid "theme"
 
 #: templates/includes/navigation.html:2
 msgid "Open Menu"
