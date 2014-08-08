@@ -2,6 +2,12 @@
 
 This is a port of the [HPSTR Jekyll theme](https://github.com/mmistakes/hpstr-jekyll-theme) by [Michael Rose](https://github.com/mmistakes) to the [Pelican](https://github.com/getpelican/pelican) static site generator.
 
+## Example
+
+[My blog](http://esafak.github.io/) :)
+
+![Screenshot](screenshot.png)
+
 ## Features
 
 * Responsive templates for post, page, and post index. Looks great on mobile, tablet, and desktop devices.
@@ -21,19 +27,17 @@ Pelican comes with additional plugins that you can install and activate for your
 
 Here are the plugins that should work out of the box with that theme if enabled:
 
-* [related posts](https://github.com/getpelican/pelican-plugins/tree/master/related_posts)
+[related posts](https://github.com/getpelican/pelican-plugins/tree/master/related_posts)
+: Displays related articles at the bottom of a blog post being read.
 
-    Displays related articles at the bottom of a blog post being read.
-
-* [i18n subsites](https://github.com/getpelican/pelican-plugins/tree/master/i18n_subsites)
-
-    Extends the translations functionality by creating internationalized sub-sites for the default site. Also takes care of translating theme items.
+[i18n subsites](https://github.com/getpelican/pelican-plugins/tree/master/i18n_subsites)
+: Extends the translations functionality by creating internationalized sub-sites for the default site. Also takes care of translating theme items.
 
   
 ## Installation
 
 1. Clone this theme into your pelican's site theme directory
-2. Update your site ```pelicanconf.py``` configuration file
+2. Update or create your site's ```pelicanconf.py``` configuration file:
 
 ``` python
 #!/usr/bin/env python
@@ -43,7 +47,7 @@ from __future__ import unicode_literals
 
 # User info
 AUTHOR = u'Your name'
-AUTHOR_ABOUT = u'Your bio goes here. It shouldn't be super long but a good two sentences or two should suffice.'
+AUTHOR_ABOUT = u'Your bio goes here. A sentence or two should suffice.'
 
 SITENAME = u'Site Title'
 SITEURL = ''

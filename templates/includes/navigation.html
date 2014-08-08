@@ -6,7 +6,9 @@
             <a href="#">{{ _('About') }}</a>
             <ul class="dl-submenu">
                 <li>
-                    <img src="{{ AVATAR if AVATAR else 'images/avatar.jpg'}}" alt="{{ AUTHOR }} photo" class="author-photo">
+                    {% if AVATAR %}
+                    <img src="{{ AVATAR }}" alt="{{ AUTHOR }} photo" class="author-photo">
+                    {% endif %}
                     <h4>{{ AUTHOR }}</h4>
                     <p>{{ AUTHOR_ABOUT }}</p>
                 </li>

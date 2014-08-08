@@ -77,7 +77,7 @@ msgid "and styled using"
 msgstr ""
 
 #: templates/includes/footer.html:1
-msgid "a derivative"
+msgid "a derivative of"
 msgstr ""
 
 #: templates/includes/footer.html:1
