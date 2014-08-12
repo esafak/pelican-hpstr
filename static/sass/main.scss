@@ -25,7 +25,9 @@
 @import "partials/typography";
 @import "modules/web-fonts";
 @include web-fonts($google-fonts);
-@include font-face($local-fonts, font-files($local-font-files));
+@each $zipped in zip($local-fonts, $local-font-files){
+	@include font-face(nth($zipped, 1), font-files(nth($zipped, 2)));
+}
 
 // Code syntax highlighting
 @import "partials/pygments";

@@ -50,6 +50,10 @@ msgstr ""
 msgid "Posts by %(author)s"
 msgstr ""
 
+#: templates/base.html:26
+msgid "Technical blog of"
+msgtr ""
+
 #: templates/categories.html:6
 msgid "Categories"
 msgstr ""

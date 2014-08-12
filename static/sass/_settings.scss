@@ -19,12 +19,12 @@ $info         : #308cbc;
 // Typography
 // --------------------------------------------------
 
-$google-fonts: "Titillium Web", "PT Serif";
-$local-fonts: "Rothenburg Decorative";
-$local-font-files: '/theme/fonts/rothenbg.woff';
+$google-fonts: "PT Serif";
+$local-fonts: "Rothenburg Decorative", "SciFly";
+$local-font-files: 'rothenbg.woff', 'SciFly-Sans.woff';
 $splash-font: "Rothenburg Decorative";
 $base-font: 'PT Serif', 'Hoefler Text', serif;
-$heading-font: 'Futura LT Pro Light', 'Futura', "Titillium Web", 'Helvetica Neue', sans-serif;
+$heading-font: 'SciFly', 'Futura LT Pro Light', 'Futura', 'Helvetica Neue', sans-serif;
 // HPSTR's default heading font is 'Lato', from Google
 $caption-font: $base-font;
 $code-font: monospace;

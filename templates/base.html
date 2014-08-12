@@ -22,8 +22,11 @@
     <meta property="og:title" content="{{SITENAME}}" />
     <meta property="og:url" content="{{SITEURL}}" />
     <meta property="og:image" content="{{AVATAR}}" />    
+    
     {% if SITESUBTITLE %}
-    <meta property="og:description" content="{{SITESUBTITLE}}">
+    <meta property="og:description" content="{{SITESUBTITLE}}"/>
+    {% elif DESCRIPTION %}
+    <meta property="og:description" content="{{DESCRIPTION}}"/>
     {% endif %}
 
     {% endblock %}
