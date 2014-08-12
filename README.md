@@ -18,8 +18,9 @@ This is a port of the [HPSTR Jekyll theme](https://github.com/mmistakes/hpstr-je
 * Support for large images to call out your favorite posts.
 * Social sharing links for Facebook, Twitter, and Google+, if you choose.
 * [Open Graph metadata](http://ogp.me/) for SEO and [better embeds in social networks](https://developers.facebook.com/docs/opengraph/howtos/maximizing-distribution-media-content). Open Graph metadata support for images, videos, audio, etc. inside posts is a possible new feature.
-* Google Web fonts.
 * Comments with [Muut](http://muut.com/) or [Disqus](http://disqus.com/).
+* Google Analytics (with Muut).
+* Google Web fonts.
 
 ## Supported plugins
 
