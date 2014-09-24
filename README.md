@@ -1,6 +1,6 @@
 # HPSTR Pelican Theme
 
-This is a port of the [HPSTR Jekyll theme](https://github.com/mmistakes/hpstr-jekyll-theme) by [Michael Rose](https://github.com/mmistakes) to the [Pelican](https://github.com/getpelican/pelican) static site generator.
+This is a customized [port](https://github.com/spiroid/pelican-hpstr) of the [HPSTR Jekyll theme](https://github.com/mmistakes/hpstr-jekyll-theme) by [Michael Rose](https://github.com/mmistakes) to the [Pelican](https://github.com/getpelican/pelican) static site generator.
 
 ## Example
 
@@ -124,14 +124,6 @@ ENABLE_MUUT = True
 
 ```
 
-
-## Contact
-
-Ping me on Twitter [@jonathan_dray](http://twitter.com/jonathan_dray) or [file a GitHub Issue](https://github.com/spiroid/pelican-hpstr/issues/new).
-
-
 ## License
-
-As the original theme is licensed under the [GNU General Public License](https://github.com/mmistakes/hpstr-jekyll-theme/blob/master/LICENSE), I choose to distribute the Pelican version under the same conditions.
 
 This theme is free and open source software, distributed under the [GNU General Public License](https://github.com/spiroid/pelican-hpstr/blob/master/LICENSE) version 2 or later. So feel free to to modify this theme to suit your needs.
